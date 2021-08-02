@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+
+/* RESET */
+
+*{margin: 0; padding: 0;}
+ul,li{margin:0; padding:0; list-style: none;}
+a {text-decoration: none;}
+
+
+#wrap {width: 1200px; margin: 0 auto;}
+#wrap header {width: 1200px; height: 100px; position: relative;}
+#wrap header .logo {width: 300px; height: 100px; float: left;}
+#wrap header .logo img {position:absolute; top:30px; left: 10px;}
+
+/* menu */
+#wrap header .menu {width: 900px; height: 100px; float: left;}
+#wrap header .menu nav {
+    width: 500px; height: 50px;
+    position: absolute; right: 0; top:25px;
+    z-index:99999;
+}
+#wrap header .menu nav li {background: rgb(75, 127, 196);}
+#wrap header .menu nav>ul>li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+nav>ul>li:hover ul{height: auto;}
+nav a {color:#fff; display: block;
+    font-size: 15px;}
+nav>ul>li a:hover{
+    background: rgba(0,0,0,0.2);
+    }
+nav>ul>li>ul {width: 125px; height: 0; 
+    overflow: hidden;}
+
+#wrap section {width: 1200px; height: 500px; background: #ddd;}
+#wrap section .slider {height:300px; overflow: hidden; position:relative;}
+#wrap section .slider>div {position:absolute; top:0; left:0;}
+#wrap section .slider img {display: block;}
+#wrap section .con .con1 {width:400px; height: 200px; background: #fff; float: left;}
+#wrap section .con .con1 ul li {height:28px; line-height: 28px; border-bottom: 1px dotted #666;}
+#wrap section .con .con1 h1 {color: rgb(27, 98, 116); font-size: 20px; margin:10px 0 10px 10px;}
+#wrap section .con .con1 img {width: 120px; height: 150px; float: left; margin:0 0 2px 0; padding:0 5px 0 4px;}
+#wrap section .con .con1 ul li span {float: right; color: #333;}
+
+#wrap section .con .con2 {width:400px; height: 200px; background: #fff; float: left; position:relative;}
+#wrap section .con .con2 h2 {color: rgb(27, 98, 116); font-size: 20px; margin:10px 0 10px 10px;}
+#wrap section .con .con2 img {width: 120px; height: 130px;}
+#wrap section .con .con2 ul li:nth-child(1) {float: left; position: absolute; left: 20px; top: 44px;}
+#wrap section .con .con2 ul li:nth-child(2) {float: left; position: absolute; left: 145px; top: 44px;}
+#wrap section .con .con2 ul li:nth-child(3) {float: right; position: absolute; right: 10px; top: 44px;}
+#wrap section .con .con3 {width:400px; height: 200px; background: rgb(93, 182, 204); float: left;}
+
+#wrap footer {width: 1200px; height: 100px;}
+#wrap footer .blogo {width: 200px; height: 100px; float: left;}
+#wrap footer .copyright {width: 800px; height: 100px; float: left;}
+#wrap footer .copyright p {text-align: center;}
+#wrap footer .sns {width: 200px; height: 100px; float: left;}
+#wrap footer .sns ul>li a {margin: 10px 10px 0 0; display: block; float: left;}
+#wrap footer .sns ul>li a:hover {opacity: 0.5;}
